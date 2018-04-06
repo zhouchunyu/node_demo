@@ -20,7 +20,7 @@ var server = http.createServer(function(request, response){
 
   /******** 从这里开始看，上面不要看 ************/
   console.log('HTTP 路径为\n' + path)
-  if(path == '/' || path == '/index.html'){
+  if(path == '/'){
     response.setHeader('Content-Type', 'text/html; charset=utf-8')
     response.write('<head><link rel="stylesheet" href="/style.css">' +
     '</head><body>'  +
