@@ -29,7 +29,7 @@ var server = http.createServer(function(request, response){
     '</body></html>')
     response.end()
   }else if(path == '/main.js'){
-    response.setHeader('Content-Type', 'text/javascript; charset=utf-8')
+    response.setHeader('Content-Type', 'application/javascript; charset=utf-8')
     response.write('alert("这是main.js在执行的")')
     response.end()
   }else if(path == '/style.css'){
